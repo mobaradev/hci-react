@@ -5,10 +5,8 @@ import styled from "styled-components";
 import CarPage from "../../pages/CarPage/CarPage";
 
 const Container = styled.div`
-  width: 100vw;
-  min-height: 100vh;
-  background-color: orange;
-  float: left;
+  width: 100%;
+  height: 100vh;
 `;
 
 class CarView extends Component {

@@ -10,7 +10,6 @@ const Container = styled.div`
   position: absolute;
   top: 52px;
   left: 0;
-  background-color: darkred;
   
   float: left;
 `;
@@ -55,7 +54,7 @@ class Hints extends Component {
             <Container>
                 {
                     this.state.availableCars.map(element => (
-                        this.props.searchingName !== "" && element.name.toUpperCase().includes(this.props.searchingName.toUpperCase())
+                        element.isMain && this.props.searchingName !== "" && element.name.toUpperCase().includes(this.props.searchingName.toUpperCase())
                         ?
                             <Link to={`/car/${element.id}`}>
                                 <Element>

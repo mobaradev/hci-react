@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import {Component} from "react";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
   height: 100px;
-  background-color: pink;
+  background-color: #C4C4C4;
   padding: 0 20px;
   position: relative;
+  margin-bottom: 40px;
   float: left;
 `;
 
@@ -15,15 +17,17 @@ const ComparisonButton = styled.button`
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
-  background-color: gold;
-  padding: 24px 32px;
+  background-color: #4EC670;
+  padding: 20px 32px;
   border: none;
   border-radius: 16px;
   cursor: pointer;
   transition: 0.5s;
-  
+  font-size: 22px;
+  font-weight: 600;
+
   &:hover {
-    background-color: goldenrod;
+    background-color: #34964f;
   }
 `;
 
@@ -34,8 +38,8 @@ class Header extends Component {
     render() {
         return(
             <Container>
-                <h1>CompCar</h1>
-                <ComparisonButton>test</ComparisonButton>
+                <Link to="/" style={{textDecoration: "none", color: "black"}}><h1 style={{textDecoration: "none", color: "black"}}>CompCar</h1></Link>
+                <Link to="/comparison"><ComparisonButton>Comparison</ComparisonButton></Link>
             </Container>
         )
     }

@@ -1,23 +1,23 @@
 import {Component} from "react";
 import Header from "../../components/Header/Header";
-import IndexPage from "../../pages/IndexPage/IndexPage";
 import styled from "styled-components";
+import OffersPage from "../../pages/OffersPage/OffersPage";
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
 `;
 
-class IndexView extends Component {
+class OffersView extends Component {
     render() {
         return (
             <Container>
                 <Header />
-                <IndexPage />
+                <OffersPage />
             </Container>
         )
     }
 
 }
 
-export default IndexView;
+export default OffersView;

@@ -1,18 +1,117 @@
 [
   {
-    "id": 1,
-    "name": "Fiat Multipla"
+    "id": 100,
+    "isMain": true,
+    "name": "Fiat Multipla",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Fiat_Multipla_001.jpg",
+    "generation": "1998-2004",
+    "engine": "Gas",
+    "statistics": {
+      "fuelUsage": 15,
+      "numberOfSeats": 6,
+      "maxSpeed": 180
+    },
+    "generationAlternatives": [
+      {"name":  "2004-2010", "id": 110}
+    ],
+    "engineAlternatives": [
+      {"name": "Diesel", "id":  101}
+    ]
   },
   {
-    "id": 2,
-    "name": "Fiat 126p"
+    "id": 101,
+    "isMain": false,
+    "name": "Fiat Multipla",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Fiat_Multipla_001.jpg",
+    "generation": "1998-2004",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 12,
+      "numberOfSeats": 6,
+      "maxSpeed": 120
+    },
+    "generationAlternatives": [
+      {"name":  "2004-2010", "id": 110}
+    ],
+    "engineAlternatives": [
+      {"name": "Diesel", "id":  100}
+    ]
   },
   {
-    "id": 3,
-    "name": "Suzuki Esteem"
+    "id": 110,
+    "isMain": false,
+    "name": "Fiat Multipla",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Fiat_Multipla_001.jpg",
+    "generation": "2004-2010",
+    "engine": "Gas",
+    "statistics": {
+      "fuelUsage": 14,
+      "numberOfSeats": 6,
+      "maxSpeed": 180
+    },
+    "generationAlternatives": [
+      {"name":  "1998-2004", "id": 100}
+    ],
+    "engineAlternatives": [
+      {"name": "Diesel", "id":  111}
+    ]
   },
   {
-    "id": 4,
-    "name": "Opel Astra"
+    "id": 111,
+    "isMain": false,
+    "name": "Fiat Multipla",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Fiat_Multipla_001.jpg",
+    "generation": "2004-2010",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 11,
+      "numberOfSeats": 6,
+      "maxSpeed": 120
+    },
+    "generationAlternatives": [
+      {"name":  "1998-2004", "id": 101}
+    ],
+    "engineAlternatives": [
+      {"name": "Gas", "id":  110}
+    ]
+  },
+  {
+    "id": 200,
+    "isMain": true,
+    "name": "Fiat 126p",
+    "photo": "https://thumbs.img-sprzedajemy.pl/1000x901c/e2/47/c5/sprzedam-fsm-fiat-126p-zdrzychow-550848937.jpg",
+    "generation": "1968-1989",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 3,
+      "numberOfSeats": 4,
+      "maxSpeed": 120
+    }
+  },
+  {
+    "id": 300,
+    "isMain": true,
+    "name": "Suzuki Esteem",
+    "photo": "https://m.media-amazon.com/images/M/MV5BMTg5NDEyNTYzOF5BMl5BanBnXkFtZTgwOTI1MDEyNTE@._V1_.jpg",
+    "generation": "1968-1989",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 11,
+      "numberOfSeats": 4,
+      "maxSpeed": 120
+    }
+  },
+  {
+    "id": 400,
+    "isMain": true,
+    "name": "Opel Astra",
+    "photo": "https://i.wpimg.pl/1920x0/m.autokult.pl/astra-g-lic-d5d226fd696e6d6c59cd.jpg",
+    "generation": "1968-1989",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 11,
+      "numberOfSeats": 6,
+      "maxSpeed": 120
+    }
   }
 ]
