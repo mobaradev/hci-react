@@ -110,7 +110,7 @@ class OffersPage extends Component {
 
     handleToolboxChange = (newCarId) => {
         console.log("changed: " + newCarId)
-        window.location.href = '/offers/' + newCarId;
+        window.location.href = '/hci-project-public/offers/' + newCarId;
     }
 
     render() {

@@ -66,7 +66,7 @@ class Propositions extends Component {
             <Container>
                 {
                     this.state.proposedCars && this.state.proposedCars.map(car =>
-                        <Link to={"/car/" + car.id}><Element title={car.name} src={car.photo} /></Link>
+                        <Link to={"/hci-project-public/car/" + car.id}><Element title={car.name} src={car.photo} /></Link>
                     )
                 }
             </Container>

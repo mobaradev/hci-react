@@ -38,8 +38,8 @@ class Header extends Component {
     render() {
         return(
             <Container>
-                <Link to="/" style={{textDecoration: "none", color: "black"}}><h1 style={{textDecoration: "none", color: "black"}}>CompCar</h1></Link>
-                <Link to="/comparison"><ComparisonButton>Comparison</ComparisonButton></Link>
+                <Link to="/hci-project-public" style={{textDecoration: "none", color: "black"}}><h1 style={{textDecoration: "none", color: "black"}}>CompCar</h1></Link>
+                <Link to="/hci-project-public/comparison"><ComparisonButton>Comparison</ComparisonButton></Link>
             </Container>
         )
     }

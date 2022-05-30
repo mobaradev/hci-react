@@ -10,11 +10,11 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<IndexView />} />
-          <Route path="/car/*" element={<CarView />} />
-          <Route path="/offers/*" element={<OffersView />} />
-          <Route path="/comparison" element={<ComparisonView />} />
-          <Route path="/comparisonResults" element={<ComparisonResultsView />} />
+          <Route path="/hci-project-public/" element={<IndexView />} />
+          <Route path="/hci-project-public/car/*" element={<CarView />} />
+          <Route path="/hci-project-public/offers/*" element={<OffersView />} />
+          <Route path="/hci-project-public/comparison" element={<ComparisonView />} />
+          <Route path="/hci-project-public/comparisonResults" element={<ComparisonResultsView />} />
         </Routes>
       </BrowserRouter>
   );

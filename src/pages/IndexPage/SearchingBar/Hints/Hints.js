@@ -56,7 +56,7 @@ class Hints extends Component {
                     this.state.availableCars.map(element => (
                         element.isMain && this.props.searchingName !== "" && element.name.toUpperCase().includes(this.props.searchingName.toUpperCase())
                         ?
-                            <Link to={`/car/${element.id}`}>
+                            <Link to={`/hci-project-public/car/${element.id}`}>
                                 <Element>
                                     {element.name}
                                 </Element>

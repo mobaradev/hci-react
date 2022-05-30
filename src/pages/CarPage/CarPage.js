@@ -102,7 +102,7 @@ class CarPage extends Component {
 
     handleToolboxChange = (newCarId) => {
         console.log("changed: " + newCarId)
-        window.location.href = '/car/' + newCarId;
+        window.location.href = '/hci-project-public/car/' + newCarId;
     }
 
     render() {
@@ -119,7 +119,7 @@ class CarPage extends Component {
                                 </InformationContainer>
                             </TopSection>
                             <BottomSection>
-                                <Link to={"/offers/" + this.state.carId}><ButtonHuge>Show offers</ButtonHuge></Link>
+                                <Link to={"/hci-project-public/offers/" + this.state.carId}><ButtonHuge>Show offers</ButtonHuge></Link>
                                 <ButtonHuge>Price analysis</ButtonHuge>
                                 <ButtonComparisonAdd isSelected={this.state.isCarInComparison} onClick={(e) => this.comparisonButtonEventHandler()} />
                             </BottomSection>
