@@ -113,5 +113,88 @@
       "numberOfSeats": 6,
       "maxSpeed": 120
     }
+  },
+  {
+    "id": 500,
+    "isMain": false,
+    "name": "Mercedes-Benz CLA coupe",
+    "photo": "https://www.autocentrum.pl/ac-file/car-version/5cd949a757502a42441458f4/mercedes-cla-c117.jpg",
+    "generation": "2013-2017",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 16,
+      "numberOfSeats": 5,
+      "maxSpeed": 280
+    },
+    "generationAlternatives": [
+      {"name":  "2017-2022", "id": 510}
+    ]
+  },
+  {
+    "id": 510,
+    "isMain": true,
+    "name": "Mercedes-Benz CLA II coupe",
+    "photo": "https://cdn.galleries.smcloud.net/t/galleries/gf-CBG1-efa9-pWhr_mercedes-benz-cla-coupe-edition-orange-art-amg-line-1920x1080-nocrop.jpg",
+    "generation": "2017-",
+    "engine": "Diesel",
+    "statistics": {
+      "fuelUsage": 13,
+      "numberOfSeats": 5,
+      "maxSpeed": 330
+    },
+    "generationAlternatives": [
+      {"name":  "2013-2017", "id": 500}
+    ]
+  },
+  {
+    "id": 600,
+    "isMain": true,
+    "name": "VOLVO XC40",
+    "photo": "https://ocdn.eu/pulscms-transforms/1/Fxpk9kpTURBXy9lM2QyOWQ0Zjk5MjFhYjYxOGNjNGExZTA3MTg1MmU5NS5qcGeRkwXNAfTNARiCoTABoTEA",
+    "generation": "2017-",
+    "engine": "Gas",
+    "statistics": {
+      "fuelUsage": 15,
+      "numberOfSeats": 6,
+      "maxSpeed": 260
+    },
+    "engineAlternatives": [
+      {"name": "Hybrid", "id":  601},
+      {"name": "Electric", "id":  602}
+    ]
+  },
+  {
+    "id": 601,
+    "isMain": false,
+    "name": "VOLVO XC40 Recharge Hybrid",
+    "photo": "https://cdn.topcarnews.net/media/wp-content/uploads/2022/04/13033759/image-volvo-xc40-t4-recharge-plugin-hybrid-review-164977067967448.jpg",
+    "generation": "2017-",
+    "engine": "Hybrid",
+    "statistics": {
+      "fuelUsage": 7.55,
+      "numberOfSeats": 5,
+      "maxSpeed": 260
+    },
+    "engineAlternatives": [
+      {"name": "Gas", "id":  600},
+      {"name": "Electric", "id":  602}
+    ]
+  },
+  {
+    "id": 602,
+    "isMain": false,
+    "name": "VOLVO XC40 Recharge Electric",
+    "photo": "https://electricmobility.store/car/volvo-xc40-p8-awd-recharge/volvo_xc40_recharge-02/",
+    "generation": "2022-",
+    "engine": "Electric",
+    "statistics": {
+      "fuelUsage": 0,
+      "numberOfSeats": 5,
+      "maxSpeed": 240
+    },
+    "engineAlternatives": [
+      {"name": "Hybrid", "id":  601},
+      {"name": "Gas", "id":  600}
+    ]
   }
 ]

@@ -14,6 +14,12 @@ const Container = styled.div`
   float: left;
 `;
 
+const Photo = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+`;
+
 const InformationField = styled.div`
 
 `;
@@ -103,12 +109,19 @@ class CarDetailsToolbox extends Component {
 
     render() {
         return(
-            <Container style={this.props.style}>
+            <Container style={this.props.style} data-aos="fade-left">
                 {
                     this.state.carData
                         ?
                             <>
                                <h2>{this.state.carData.name}</h2>
+                                {
+                                    this.props.showPhoto
+                                    ?
+                                        <Photo src={this.state.carData.photo} />
+                                    :
+                                        ""
+                                }
                                 Generacja:
                                 <Select onChange={(e) => this.handleGenerationChange(e)}>
                                     <option>{this.state.carData.generation}</option>

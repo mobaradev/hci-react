@@ -32,7 +32,7 @@ class OffersList extends Component {
     render() {
         return(
             <Container>
-                {this.state.offers.map(offer => <Element></Element>)}
+                {this.state.offers.map(offer => <Element data-aos="fade-left"></Element>)}
             </Container>
         )
     }

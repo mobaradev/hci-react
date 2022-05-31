@@ -158,7 +158,7 @@ class ComparisonResultsPage extends Component {
     render() {
         return(
             <Container>
-                <TopSection>
+                <TopSection data-aos="fade-up">
                     <TopSectionWrapper>
                         <Table>
                             <Tr>

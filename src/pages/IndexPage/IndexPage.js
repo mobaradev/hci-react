@@ -11,11 +11,18 @@ const Container = styled.div`
 
 const PropositionsContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: calc(100% - 140px - 300px);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  float: left;
+`;
+
+const BottomSection = styled.div`
+  width: 100%;
+  height: 300px;
+  background-color: #61dafb;
   float: left;
 `;
 
@@ -35,6 +42,9 @@ class IndexPage extends Component {
                         <Propositions />
                     </div>
                 </PropositionsContainer>
+                <BottomSection>
+                    test
+                </BottomSection>
             </Container>
         )
     }

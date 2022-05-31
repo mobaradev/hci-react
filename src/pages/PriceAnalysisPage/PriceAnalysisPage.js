@@ -2,18 +2,31 @@ import styled from "styled-components";
 import {Component} from "react";
 
 import cars from "../../data/cars.json";
-import CarsInComparison from "../../logic/CarsInComparison/CarsInComparison";
-import ButtonHuge from "../../components/ButtonHuge/ButtonHuge";
 import CarDetailsToolbox from "../../components/CarDetailsToolbox/CarDetailsToolbox";
-import OffersList from "./OffersList/OffersList";
-import OffersMap from "./OffersMap/OffersMap";
 
-import Aos from 'aos';
-import "aos/dist/aos.css"
+import {VictoryArea, VictoryBar, VictoryChart} from 'victory';
+import Clearfix from "../../components/Clearfix/Clearfix";
+
+
+
+const data = [
+    {quarter: 1, earnings: 100000},
+    {quarter: 2, earnings: 45000},
+    {quarter: 4, earnings: 40000},
+    {quarter: 8, earnings: 14000}
+];
 
 const Container = styled.div`
   width: 100%;
   height: calc(100% - 140px);
+  float: left;
+`;
+
+const ChartContainer = styled.div`
+  width: calc(100% - 400px);
+  height: 100%;
+  background-color: #C4C4C4;
+  border-radius: 8px;
   float: left;
 `;
 
@@ -67,7 +80,7 @@ const Tab = styled.div`
 `;
 
 
-class OffersPage extends Component {
+class PriceAnalysisPage extends Component {
     constructor() {
         super();
         this.state = {
@@ -125,28 +138,31 @@ class OffersPage extends Component {
                         <>
                             <TopSection>
                                 <TopSectionWrapper>
-                                    <CarDetailsToolbox showPhoto carId={this.state.carId} handleToolboxChange={this.handleToolboxChange} style={{marginRight: 50}} />
-                                    <Tab onClick={() => this.setPageMode("list")} isSelected={this.state.pageMode === "list"}>List of offers</Tab>
-                                    <Tab onClick={() => this.setPageMode("map")} isSelected={this.state.pageMode === "map"}>Map</Tab>
-                                    {
-                                        this.state.pageMode === "list"
-                                        ?
-                                            <OffersList />
-                                        :
-                                            <OffersMap />
-                                    }
+                                    <CarDetailsToolbox carId={this.state.carId} handleToolboxChange={this.handleToolboxChange} style={{marginRight: 50}} />
 
+                                    <ChartContainer>
+                                        <VictoryChart data-aos="fade-left">
+                                        <VictoryArea
+                                            data={data}
+                                            // data accessor for x values
+                                            x="quarter"
+                                            // data accessor for y values
+                                            y="earnings"
+                                        />
+                                        </VictoryChart>
+                                        <Clearfix />
+                                    </ChartContainer>
                                 </TopSectionWrapper>
                             </TopSection>
                             <BottomSection>
                             </BottomSection>
                         </>
-                    :
-                    ""
+                        :
+                        ""
                 }
             </Container>
         )
     }
 }
 
-export default OffersPage;
+export default PriceAnalysisPage;

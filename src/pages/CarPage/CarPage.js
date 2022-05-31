@@ -113,14 +113,14 @@ class CarPage extends Component {
                     ?
                         <Container>
                             <TopSection>
-                                <Photo src={this.state.carData.photo} />
+                                <Photo data-aos="zoom-in" src={this.state.carData.photo} />
                                 <InformationContainer>
                                     <CarDetailsToolbox carId={this.state.carId} handleToolboxChange={this.handleToolboxChange} />
                                 </InformationContainer>
                             </TopSection>
-                            <BottomSection>
+                            <BottomSection data-aos="fade-up">
                                 <Link to={"/hci-project-public/offers/" + this.state.carId}><ButtonHuge>Show offers</ButtonHuge></Link>
-                                <ButtonHuge>Price analysis</ButtonHuge>
+                                <Link to={"/hci-project-public/priceAnalysis/" + this.state.carId}><ButtonHuge>Price analysis</ButtonHuge></Link>
                                 <ButtonComparisonAdd isSelected={this.state.isCarInComparison} onClick={(e) => this.comparisonButtonEventHandler()} />
                             </BottomSection>
                         </Container>

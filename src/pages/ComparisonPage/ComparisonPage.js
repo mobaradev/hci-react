@@ -135,7 +135,7 @@ class ComparisonPage extends Component {
                     {
                         this.state.carsInComparison.map(
                             car =>
-                                <CarContainer>
+                                <CarContainer data-aos="fade-left">
                                     <Link to={"/hci-project-public/car/" + car.id}>
                                         <CarContainerInfoWrapper>
                                             <CarPhoto src={car.photo} />
@@ -152,7 +152,7 @@ class ComparisonPage extends Component {
                     </TopSectionWrapper>
                 </TopSection>
                 <BottomSection>
-                    <Link to="/hci-project-public/comparisonResults"><ButtonHuge style={{backgroundColor: "#4EC670"}}>COMPARE</ButtonHuge></Link>
+                    <Link to="/hci-project-public/comparisonResults"><ButtonHuge data-aos="zoom-in" style={{backgroundColor: "#4EC670"}}>COMPARE</ButtonHuge></Link>
                 </BottomSection>
             </Container>
         )

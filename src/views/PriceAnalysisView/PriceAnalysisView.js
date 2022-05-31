@@ -1,22 +1,22 @@
 import {Component} from "react";
 import Header from "../../components/Header/Header";
 import styled from "styled-components";
-import OffersPage from "../../pages/OffersPage/OffersPage";
+import PriceAnalysisPage from "../../pages/PriceAnalysisPage/PriceAnalysisPage";
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
 `;
 
-class OffersView extends Component {
+class PriceAnalysisView extends Component {
     render() {
         return (
             <Container>
                 <Header />
-                <OffersPage />
+                <PriceAnalysisPage />
             </Container>
         )
     }
 }
 
-export default OffersView;
+export default PriceAnalysisView;

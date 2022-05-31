@@ -17,7 +17,7 @@ const Container = styled.div`
 const Element = styled.div`
   width: 100%;
   height: 40px;
-  background-color: burlywood;
+  background-color: #e1efe1;
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -26,7 +26,7 @@ const Element = styled.div`
   cursor: pointer;
   color: black;
   float: left;
-  
+
   &:hover {
     background-color: aliceblue;
   }
@@ -57,7 +57,7 @@ class Hints extends Component {
                         element.isMain && this.props.searchingName !== "" && element.name.toUpperCase().includes(this.props.searchingName.toUpperCase())
                         ?
                             <Link to={`/hci-project-public/car/${element.id}`}>
-                                <Element>
+                                <Element data-aos="fade-right">
                                     {element.name}
                                 </Element>
                             </Link>

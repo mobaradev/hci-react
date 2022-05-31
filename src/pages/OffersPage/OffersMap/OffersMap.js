@@ -30,7 +30,7 @@ class OffersMap extends Component {
     render() {
         return(
             <Container>
-                <MapImage src="http://www.press.pl/images/contents/photo_57968_1563533316_big.jpg" draggable="false" />
+                <MapImage data-aos="fade-left" src="http://www.press.pl/images/contents/photo_57968_1563533316_big.jpg" draggable="false" />
             </Container>
         )
     }
